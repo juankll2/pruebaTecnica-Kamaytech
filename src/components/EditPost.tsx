@@ -57,10 +57,9 @@ export default function EditPost() {
 			.then((json) => {
 				console.log("Publicación modificada:", json);
 				setSuccess(true);
-				// alert("Datos modificados con éxito");
 				setTimeout(() => {
 					setSuccess(false);
-					window.location.replace("/"); // Ocultar el Alert después de 3 segundos
+					window.location.replace("/"); // Ocultar el Alert después de 1.5 segundos
 				}, 1500);
 			})
 

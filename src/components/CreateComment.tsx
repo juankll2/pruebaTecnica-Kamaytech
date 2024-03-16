@@ -36,9 +36,10 @@ export default function CreateComment() {
 			const data = await response.json();
 			console.log(data);
 			setSuccess(true);
+			//Mostrar el alert 1.5 seg y rediriguir al home
 			setTimeout(() => {
 				setSuccess(false);
-				window.location.replace("/"); // Ocultar el Alert después de 3 segundos
+				window.location.replace("/");
 			}, 1500);
 		} catch (error) {
 			console.error("Error:", error);
@@ -47,7 +48,7 @@ export default function CreateComment() {
 
 	const handlePublishComment = () => {
 		createComment(newComment);
-		setNewComment({ postId: 1, id: 3, name: "", body: "" }); // Limpia los campos después de publicar el comentario
+		setNewComment({ postId: 1, id: 3, name: "", body: "" });
 	};
 
 	return (

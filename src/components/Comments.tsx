@@ -52,7 +52,7 @@ export default function Comments() {
 						<img
 							className="comentCard-avatar"
 							alt="Imagen o avatar de perfil"
-							src={imgSrc} // Reemplaza 'imgSrc' con la ruta de tu imagen/avatar
+							src={imgSrc}
 						/>
 						<div>
 							<Text fontSize="sm">

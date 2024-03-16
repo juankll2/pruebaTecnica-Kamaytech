@@ -95,12 +95,7 @@ export default function Posts() {
 							<CardFooter display={"flex"} justifyContent={"space-between"}>
 								<Link to={`/editar/${post.id}`}>
 									<Tooltip label="Editar Publicación" fontSize="md">
-										<Icon
-											as={EditIcon}
-											boxSize={6} // Tamaño del icono
-											color="currentColor" // Color del icono
-											mr={2}
-										>
+										<Icon as={EditIcon} boxSize={6} color="currentColor" mr={2}>
 											<path
 												strokeLinecap="round"
 												strokeLinejoin="round"
@@ -113,20 +108,18 @@ export default function Posts() {
 									<Icon
 										as={DeleteIcon} // Icono de eliminación
 										boxSize={6}
-										color="red.500" // Color rojo
-										cursor="pointer" // Cambia el cursor al pasar sobre el icono
+										color="red.500"
+										cursor="pointer"
 										onClick={() => deletePost(post.id)} // Maneja la eliminación al hacer clic
 									/>
 								</Tooltip>
 								<Link to={`/comentarios/${post.id}`}>
 									<Tooltip label="Ver Comentarios" fontSize="md">
 										<IconButton
-											aria-label="Ver comentarios" // Etiqueta accesible para pantalla
-											icon={<ChatIcon />} // Icono de enlace
-											colorScheme="teal" // Esquema de color
-											variant="solid" // Estilo de botón sólido
-											// as={Link} // No necesitas esto aquí
-											// to={`/comentarios/${post.id}`}
+											aria-label="Ver comentarios"
+											icon={<ChatIcon />}
+											colorScheme="teal"
+											variant="solid"
 										/>
 									</Tooltip>
 								</Link>

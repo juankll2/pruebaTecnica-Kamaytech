@@ -45,7 +45,7 @@ export default function CreatePost() {
 			setSuccess(true);
 			setTimeout(() => {
 				setSuccess(false);
-				window.location.replace("/"); // Ocultar el Alert después de 3 segundos
+				window.location.replace("/"); // Ocultar el Alert después de 1.5 segundos
 			}, 1500);
 		} catch (error) {
 			console.error("Error:", error);
