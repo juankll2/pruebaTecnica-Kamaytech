@@ -92,7 +92,7 @@ export default function CreatePost() {
 			{success && (
 				<Alert status="success" variant="subtle" mt={4}>
 					<AlertIcon />
-					Comentario creado con exito
+					Publicación creada con exito
 				</Alert>
 			)}
 		</div>
